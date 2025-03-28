@@ -42,7 +42,7 @@ Diabetes Mellitus affects hundreds of millions globally, imposing immense burden
 
 ## Project Objectives
 
-This project was structured around the following key objectives (as outlined in the [Project Proposal](./PROJECT%20PROPOSAL%20-%20HARNESSING%20MACHINE%20LEARNING%20FOR%20PROACTIVE%20DIABETES%20RISK%20PREDICTION%20-%20EMPOWERING%20EARLY%20DETECTION%20AND%20MANAGEMENT.pdf)):
+This project was structured around the following key objectives:
 
 1.  **Data Acquisition and Intelligent Preprocessing:** Acquire and meticulously preprocess the "Diabetes Health Indicators Dataset," ensuring data quality and readiness for modeling.
 2.  **In-depth EDA and Feature Engineering:** Conduct comprehensive EDA to understand data characteristics, identify patterns/correlations, and engineer new, informative features.
@@ -92,7 +92,7 @@ Feature importance analysis (derived from Logistic Regression coefficients, Rand
 
 *   **High Importance:** `GenHlth`, `HighBP`, `BMI`, `Age`, `Income`.
 *   **Interaction Terms:** Engineered features like `BMI_Age_Interaction` and `Health_Risk_Index` also demonstrated predictive value, capturing combined effects.
-*   *(Refer to the feature importance plots within the [Jupyter Notebook](./Project_04_Diabetes_Prediction.ipynb).*
+*   *(Refer to the feature importance plots within the [Jupyter Notebook](./diabetes%20risk%20prediction%20project 13.ipynb).*
 
 ### Model Performance & Selection
 
@@ -151,17 +151,6 @@ To set up the environment and run this project locally:
 1.  Open the Jupyter Notebook: `Project_04_Diabetes_Prediction.ipynb`.
 2.  Execute the cells sequentially to perform data loading, preprocessing, EDA, feature engineering, model training, tuning, and evaluation.
 3.  **Warning:** Training and hyperparameter tuning (especially GridSearchCV and Keras Tuner) can be computationally intensive and time-consuming, particularly on standard hardware. Running on platforms like Google Colab with GPU/TPU acceleration (for Neural Networks) is recommended for faster execution.
-
-### Using Pre-trained Models (`main.py`)
-
-A simple script `main.py` is provided to demonstrate predictions using pre-trained models (assuming they are saved, e.g., as `.joblib` or `.keras` files - *Note: Saving/loading logic might need to be added/confirmed in the notebook/script if not already present*).
-
-1.  Ensure the required pre-trained model files are present in the repository.
-2.  Run the script from the activated environment:
-    ```bash
-    python main.py
-    ```
-3.  Follow the on-screen prompts (likely involving selecting a model and inputting feature values) to get a prediction.
 
 ## Actionable Insights & Impact
 
